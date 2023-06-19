@@ -1,0 +1,1120 @@
+/* common */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F7F7;
+  width: 100%;
+}
+
+img {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #235790;
+  color: white;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+header {
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+                    rgba(255, 255, 255, 0) 70% 100%),
+                    radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li a {
+  padding-left: 18px;
+  font-size: 22px;
+  color: white;
+}
+
+header h1 {
+  font-size: 20px;
+  padding-right: 200px;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Klee One', cursive;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+header h2 {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+header h2:hover {
+  opacity: .5;
+}
+
+header a {
+  font-size: 22px;
+  padding-left: 18px;
+  color: white;
+}
+
+header a:hover {
+  opacity: .5;
+}
+
+header p {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 1;
+  cursor: pointer;
+}
+
+header p:hover {
+  opacity: .5;
+}
+
+header .menu-btn {
+  display: none;
+}
+
+
+/* overlay  */
+
+
+.overlay {
+  display: none;
+}
+
+
+/* big-img */
+.big-img {
+  position: relative;
+}
+
+.big-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: white;
+  writing-mode: vertical-rl;
+  font-size: 45px;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Klee One', cursive;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.big-img img.active {
+  width: 100%;
+  height: 770px;
+  object-fit: cover;
+  display: block;
+}
+
+.big-img img {
+  display: none;
+}
+
+.custom {
+  margin: 0 auto;
+  /* text-align: center; */
+  justify-content: center;
+  font-size: 32px;
+  display: flex;
+}
+
+.custom li {
+  margin: 0 8px;
+}
+
+.custom li:hover {
+  opacity: .5
+  ;
+}
+/* メニュー */
+
+.menu {
+  background-color: rgba(0,0,0,0.9);
+  padding: 16px;
+}
+
+.menu ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.menu ul li {
+  border-left: 1px solid white;
+  padding: 0 40px;
+  color: white;
+  cursor: pointer;
+}
+ 
+.menu ul li:last-child {
+  border-right: 1px solid white;
+}
+
+.menu ul li:hover {
+  opacity: .5;
+}
+
+.menu a {
+  color: inherit;
+}
+
+.menu #close {
+  display: none;
+}
+
+.intro {
+  background: #F8F7F7;
+  color: black;
+  padding: 30px 400px;
+}
+
+
+.intro h1 {
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 55px;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.intro p {
+  font-size: 16px;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+  padding-bottom: 40px;
+}
+
+/* news  */
+
+.news {
+  background: #13507e;
+  display: flex;
+}
+
+
+
+.news {
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+                    rgba(255, 255, 255, 0) 70% 100%),
+                    radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+
+  color: white;
+
+  padding: 100px 200px;
+}
+  
+
+.news .news-box h1 {
+  font-family: 'BIZ UDPMincho', serif;
+  font-family: 'Klee One', cursive;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+  border-bottom: 2px dotted white;
+  margin-bottom: 20px;
+  padding: 14px;
+}
+
+.news .news-box h2 {
+  font-family: 'BIZ UDPMincho', serif;
+  font-family: 'Klee One', cursive;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 22px;
+  padding-bottom: 16px;
+}
+
+.news .news-box {
+  width: 40%;
+}
+
+.news ul {
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.news li {
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+/* guide */
+
+.guide {
+  background: #F8F7F7;
+  padding: 50px;
+}
+
+.guide-box {
+  font-size: 10px;
+  background-color: white;
+  border: 3px solid #13507e;
+  display: flex;
+  padding: 20px;
+  color: #13507e;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.guide-box:hover {
+  opacity: .5;
+}
+
+.guide-box i {
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 18px;
+}
+
+/* map  */
+
+.map {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* adres  */
+
+.address {
+  background-color: white;
+  color: #13507e;
+  border: 2px dotted #13507e;
+  padding: 30px;
+  margin: 30px auto;
+  font-size: 16px;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.address ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.address li:hover {
+  opacity: .5;
+}
+
+.address li {
+  display: flex;
+  cursor: pointer;
+}
+
+.address li + li {
+  padding-left: 24px;
+}
+
+/* inst  */
+
+.inst {
+  background: #F8F7F7;
+  padding: 50px;
+}
+
+.inst-box {
+  font-size: 10px;
+  background-color: white;
+  border: 3px solid #13507e;
+  display: flex;
+  padding: 20px;
+  color: #13507e;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.inst-box:hover {
+  opacity: .5;
+}
+
+.inst-box i {
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 18px;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  color: white;
+}
+
+/* a 
+
+our.html
+
+
+a  */
+
+
+/* big-img-1 */
+
+
+.big-img-1 {
+  position: relative;
+}
+
+.big-img-1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: white;
+  font-size: 45px;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Klee One', cursive;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.big-img-1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.our h1 {
+  background: #13507e;
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+                    rgba(255, 255, 255, 0) 70% 100%),
+                    radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+
+  color: white;
+
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+
+  font-size: 25px;
+
+  padding: 25px;
+  padding-left: 250px;
+  margin-top: 80px;
+}
+
+.our {
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.our ul {
+  padding: 30px 250px;
+}
+
+.our li {
+  display: flex;
+  padding: 60px 0;
+  gap: 50px;
+}
+
+.our li:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.our .our-box {
+  width: 65%;
+}
+
+.our h2 {
+  font-size: 24px;
+  border-bottom: 1px dotted black;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.our p {
+  font-size: 16px;
+  padding-top: 16px;
+
+}
+
+.our img {
+  width: 35%;
+  height: 250px;
+}
+
+
+/* a
+
+.food-course
+food.html
+
+a */
+
+
+
+.food-course {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.food-course h1 {
+  background: #13507e;
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+  rgba(255, 255, 255, 0) 70% 100%),
+  radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+  
+  color: white;
+
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+  
+  padding: 25px;
+  padding-left: 250px;
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+
+.food-course-box {
+  padding: 100px 250px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.food-course-box table {
+  width: 40%;
+}
+
+.food-course-box thead th {
+  border-bottom: 1px dotted black;
+}
+
+.food-course-box td {
+  text-align: center;
+  padding: 16px;
+}
+
+/* a
+
+sis 
+com.html
+
+a */
+
+.sis {
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.sis h1 {
+  background: #13507e;
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+  rgba(255, 255, 255, 0) 70% 100%),
+  radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+  
+  color: white;
+
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Shippori Mincho', serif;
+  
+  padding: 25px;
+  padding-left: 250px;
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+.sis-box {
+  padding: 100px 250px;
+}
+
+.sis h2 {
+  background: #13507e;
+  background-size: 50px 50px;
+  background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
+  rgba(255, 255, 255, 0) 70% 100%),
+  radial-gradient(circle at top left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at top right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+  rgba(255, 255, 255, 0) 35% 100%),
+  radial-gradient(circle at bottom left, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0) 34%, #000 34% 35%, 
+                    rgba(255, 255, 255, 0) 35% 100%);
+  background-repeat: repeat;
+  
+  color: white;
+  width: 100px;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.sis h3 {
+  font-size: 20px;
+  color: #13507e;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+.sis address {
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+
+.border {
+	display: flex;
+	align-items: center;
+  /* z-index: 10; */
+}
+
+.border:after {
+	content: "";
+	flex-grow: 2;
+	height: 2px;
+	display: block;
+}
+
+.border:after {
+	margin-left: 1em;
+	background: #13507e;
+}
+
+/* mapと文字をflex */
+
+.sis .head-office {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sis-container {
+  width: 65%;
+}
+
+.sis .map-1 {
+  width: 35%;
+  height: 200px;
+  z-index: -1;
+}
+
+.sis iframe {
+  width: 350px;
+  height: 200px;
+}  
+
+/* mapと文字をflex */
+
+.sis-office li {
+  display: flex;
+}
+
+/* a
+
+.move
+
+a */
+
+.move {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .5s, transform .5s;
+}
+
+.move.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* a 
+
+shift
+
+a */
+
+.shift {
+  opacity: 0;
+  transform: translatex(20px);
+  transition: opacity .5s, transform .5s;
+}
+
+.shift:nth-child(2n) {
+  opacity: 0;
+  transform: translatex(-20px);
+  transition: opacity .5s, transform .5s;
+}
+
+.shift.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* a
+
+レスポンシブ
+
+a */
+
+
+@media screen and (max-width: 700px) {
+  body {
+    /* background-color: pink; */
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Klee One', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Shippori Mincho', serif;
+  }
+
+  /* index.html */
+
+  /* header  */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 22px;
+    padding: 0;
+  }
+
+  header h2,ul,a,p {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header .menu-btn a {
+    display: block;
+    font-size: 40px;
+    color: white;
+  }
+
+  header #close {
+    display: none;
+  }
+
+  header .menu-btn:hover {
+    opacity: .5;
+  }
+
+
+
+  /* overlay */
+
+  
+  .overlay {
+    display: flex;
+    width: 40%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s linear;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .overlay ul {
+    display: block;
+    padding: 16px;
+  }
+
+  .overlay li {
+    padding-bottom: 16px;
+  }
+
+  .overlay a {
+    color: white;
+    display: block;
+  }
+
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .overlay #close:hover {
+    opacity: .5;
+  }
+
+  /* .big-img  */
+
+  .big-img img {
+    height: 200px;
+    z-index: -10;
+  }
+
+  .big-img h1 {
+    writing-mode: horizontal-tb;
+    font-size: 25px;
+  }
+
+  /* menu  */
+
+  .menu {
+    display: none;
+  }
+
+  /* intro  */
+
+  .intro {
+    display: block;
+    margin: 0;
+    padding: 0 40px;
+    height: auto;
+  }
+
+  .intro h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 16px 0 30px 0;
+  }
+
+  .intro p {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* .news */
+
+  .news {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 16px;
+    /* text-align: center; */
+  }
+
+  .news-box {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .news ul {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .news li {
+    font-size: 16fpx;
+  }
+
+  /* .map */
+
+  .map {
+    margin: 50px 0;
+  }
+
+  /* .address */
+
+  .address {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    padding: 16px;
+    margin-bottom: 50px;
+  }
+
+  .address ul {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .address li {
+    margin: 0;
+    padding-bottom: 16px;
+  }
+
+  .address li + li {
+    padding-left: 0;
+  }
+
+  .address p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* a
+
+  our.html
+
+  a */
+
+  .our h1 {
+    padding: 8px 16px;
+    margin: 32px 0;
+    font-size: 20px;
+  }
+  
+  .big-img-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .big-img-1 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color: white;
+    font-size: 35px;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Klee One', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Shippori Mincho', serif;
+  }
+  
+  .our {
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Shippori Mincho', serif;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .our-box {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 100%;
+  }
+  
+  .our ul {
+    display: block;
+    max-width: 100%;
+    padding: 0 32px;
+    margin: 0;
+  }
+  
+  .our li {
+    display: block;
+    margin: 0;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+  
+  .our li:nth-child(2n) {
+    display: block;
+    flex-direction: row;
+  }
+  
+  .our p {
+    font-size: 16px;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .our img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 32px;
+  }
+
+  /* a
+
+  food.html 
+
+  a */
+
+  .food-course h1 {
+    padding: 8px 16px;
+    margin: 32px 0;
+    font-size: 20px;
+  }
+
+  .food-course {
+    margin: 0;
+    justify-content: center;
+  }
+  
+  
+  .food-course-box {
+    padding: 0;
+    display: block;
+  }
+  
+  .food-course-box table {
+    width: 80%;
+    margin: 44px auto;
+  }
+
+  .food-course-box table:last-child {
+    margin-bottom: 48px;
+  }
+
+  /* a
+
+  com.html 
+
+  a */
+
+  .sis h1 {
+    padding: 8px 16px;
+    margin: 32px 0;
+    font-size: 20px;
+  }
+
+  .sis li {
+    display: block;
+  }
+
+  .sis-box {
+    margin: 0 16px;
+    padding: 0;
+  }
+
+  .sis .head-office {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .sis-container {
+    padding: 0;
+  }
+
+  .about-com {
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .sis-office {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .sis-office ul {
+    display: block;
+  }
+
+}
