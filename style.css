@@ -24,8 +24,9 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-color: #F8F7F7;
+  background-color: #0e2a3f;
   width: 100%;
+  color: white;
 }
 
 img {
@@ -41,7 +42,7 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: #235790;
+  background: #206392;
   color: white;
   padding: 12px;
   margin: 0 auto;
@@ -148,33 +149,41 @@ header .menu-btn {
   font-family: 'Shippori Mincho', serif;
 }
 
-.big-img img.active {
+.big-img img {
   width: 100%;
   height: 770px;
   object-fit: cover;
   display: block;
 }
 
-.big-img img {
-  display: none;
+
+/* slick */
+
+.slick-dots li button:before {
+  color: white;
+  opacity: .5;
 }
 
-.custom {
-  margin: 0 auto;
-  /* text-align: center; */
-  justify-content: center;
-  font-size: 32px;
-  display: flex;
+.slick-dots li.slick-active button:before{
+  color: white;
+  opacity: 1;
 }
 
-.custom li {
-  margin: 0 8px;
+
+/* slickの矢印 */
+
+.slick-prev, .slick-next {
+  z-index: 1;
 }
 
-.custom li:hover {
-  opacity: .5
-  ;
+.slick-prev {
+  left: 30px;
 }
+
+.slick-next {
+  right: 30px;
+}
+
 /* メニュー */
 
 .menu {
@@ -213,9 +222,8 @@ header .menu-btn {
 }
 
 .intro {
-  background: #F8F7F7;
-  color: black;
-  padding: 30px 400px;
+  background: #0e2a3f;
+  padding: 100px 400px;
 }
 
 
@@ -237,7 +245,7 @@ header .menu-btn {
 /* news  */
 
 .news {
-  background: #13507e;
+  background: #206392;
   display: flex;
 }
 
@@ -301,17 +309,17 @@ header .menu-btn {
 /* guide */
 
 .guide {
-  background: #F8F7F7;
-  padding: 50px;
+  background: #0e2a3f;
+  padding: 100px 0;
 }
 
 .guide-box {
   font-size: 10px;
-  background-color: white;
-  border: 3px solid #13507e;
+  background-color: #206392;
+  border: 3px solid white;
   display: flex;
   padding: 20px;
-  color: #13507e;
+  /* color: #13507e; */
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -335,7 +343,7 @@ header .menu-btn {
   width: 100%;
   height: 400px;
   position: relative;
-  margin-top: 70px;
+  /* margin-top: 70px; */
   margin-bottom: 100px;
 }
 
@@ -350,9 +358,9 @@ header .menu-btn {
 /* adres  */
 
 .address {
-  background-color: white;
-  color: #13507e;
-  border: 2px dotted #13507e;
+  background-color: #206392;
+  color: white;
+  border: 2px dotted white;
   padding: 30px;
   margin: 30px auto;
   font-size: 16px;
@@ -385,17 +393,17 @@ header .menu-btn {
 /* inst  */
 
 .inst {
-  background: #F8F7F7;
+  background: #0e2a3f;
   padding: 50px;
 }
 
 .inst-box {
   font-size: 10px;
-  background-color: white;
-  border: 3px solid #13507e;
+  background-color: #206392;
+  border: 3px solid white;
   display: flex;
   padding: 20px;
-  color: #13507e;
+  color: white;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -420,10 +428,10 @@ footer {
   color: white;
 }
 
+
 /* a 
 
 our.html
-
 
 a  */
 
@@ -459,7 +467,7 @@ a  */
 }
 
 .our h1 {
-  background: #13507e;
+  background: #206392;
   background-size: 50px 50px;
   background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
                     rgba(255, 255, 255, 0) 70% 100%),
@@ -543,7 +551,7 @@ a */
 }
 
 .food-course h1 {
-  background: #13507e;
+  background: #206392;
   background-size: 50px 50px;
   background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
   rgba(255, 255, 255, 0) 70% 100%),
@@ -581,7 +589,7 @@ a */
 }
 
 .food-course-box thead th {
-  border-bottom: 1px dotted black;
+  border-bottom: 1px solid white;
 }
 
 .food-course-box td {
@@ -602,7 +610,7 @@ a */
 }
 
 .sis h1 {
-  background: #13507e;
+  background: #206392;
   background-size: 50px 50px;
   background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
   rgba(255, 255, 255, 0) 70% 100%),
@@ -632,7 +640,7 @@ a */
 }
 
 .sis h2 {
-  background: #13507e;
+  background: #206392;
   background-size: 50px 50px;
   background-image: radial-gradient(farthest-corner, rgba(255, 255, 255, 0) 68%, #000 68% 70%, 
   rgba(255, 255, 255, 0) 70% 100%),
@@ -656,7 +664,7 @@ a */
 
 .sis h3 {
   font-size: 20px;
-  color: #13507e;
+  color: white;
   font-weight: bold;
   padding: 16px 0;
 }
@@ -681,7 +689,7 @@ a */
 
 .border:after {
 	margin-left: 1em;
-	background: #13507e;
+	background: #206392;
 }
 
 /* mapと文字をflex */

@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>居酒屋</title>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- css   -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- グーグルフォント -->
@@ -53,43 +58,19 @@
     <div class="big-img">
       <div class="slider">
         <div>
-          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head.jpg?raw=true" alt="スライド画像01"
-            class="large-img active">
+          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head.jpg?raw=true" alt="スライド画像01">
         </div>
         <div>
-          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head2.jpg?raw=true" class="large-img"
-            alt="スライド画像02">
+          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head2.jpg?raw=true" alt="スライド画像02">
         </div>
         <div>
-          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head3.jpg?raw=true" class="large-img"
-            alt="スライド画像03">
+          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head3.jpg?raw=true" alt="スライド画像03">
         </div>
         <div>
-          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head4.jpg?raw=true" class="large-img"
-            alt="スライド画像04">
+          <img src="https://github.com/matsuyas0120/turven.Site/blob/main/head4.jpg?raw=true" alt="スライド画像04">
         </div>
       </div>
       <h1>居酒屋</h1>
-      <ul class="custom">
-        <li>
-          <i class="bi bi-caret-left"></i>
-        </li>
-        <li>
-          <i class="bi bi-circle thumbnail"></i>
-        </li>
-        <li>
-          <i class="bi bi-circle thumbnail"></i>
-        </li>
-        <li>
-          <i class="bi bi-circle thumbnail"></i>
-        </li>
-        <li>
-          <i class="bi bi-circle thumbnail"></i>
-        </li>
-        <li>
-          <i class="bi bi-caret-right"></i>
-        </li>
-      </ul>
     </div>
 
     <!-- メニュー -->
@@ -186,13 +167,21 @@
 
   <script defer src="js/main.js"></script>
   <!-- slick js link -->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 				
   <script>
     $(document).ready(function () {
-      $('.slider').slick();
+      $('.slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        fade: true,
+        autoplaySpeed: 3000,
+        speed: 1000
+
+      });
     });
   </script>
 </body>
